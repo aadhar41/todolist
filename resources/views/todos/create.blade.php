@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Create Todo  </h1>
-    {{ Form::open(['url' => 'TodosController@store', 'method' => 'POST']) }}
+    {{ Form::open(['action' => 'TodosController@store', 'method' => 'POST']) }}
         {{ Form::bsText('text') }}
         {{ Form::bsTextArea('body') }}
         {{ Form::bsText('due') }}
